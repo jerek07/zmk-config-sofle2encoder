@@ -62,6 +62,22 @@
         };
     };
 
+    macros {
+        p1: p1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp EXCL &kp D &kp E &kp R &kp O &kp T &kp N1 &kp N6 &kp N8 &kp N8>;
+            label = "P1";
+        };
+
+        p2: p2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp O &kp M &kp LS(P) &kp A &kp EXCL &kp N &kp E &kp N1 &kp N6 &kp N8 &kp N8>;
+            label = "P2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -98,11 +114,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                              &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                              &kp CARET       &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                           &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans  &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &trans    &kp C_AC_ZOOM  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
-                   &trans     &trans    &trans    &trans     &trans    &trans         &trans          &trans         &trans          &trans
+&trans  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5                              &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
+&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                              &kp CARET       &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                           &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&trans  &p1       &p2     &kp PLUS  &kp LBRC  &kp RBRC   &trans    &kp C_AC_ZOOM  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
+                  &trans  &trans    &trans    &trans     &trans    &trans         &trans          &trans         &trans          &trans
             >;
 
             sensor-bindings =
