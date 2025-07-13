@@ -114,16 +114,16 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1    &kp F2  &kp F3           &kp F4    &kp F5                              &kp F6          &kp F7                  &kp F8                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F11
-&trans  &kp N1    &kp N2  &kp N3           &kp N4    &kp N5                              &kp CARET       &kp AMPERSAND           &kp ASTRK                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&trans  &kp EXCL  &kp AT  &kp HASH         &kp DLLR  &kp PRCNT                           &kp MINUS       &kp EQUAL               &kp ASTRK                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans  &p1       &p2     &kp C_AC_SEARCH  &kp LBRC  &kp RBRC   &trans    &kp C_AC_ZOOM  &kp UNDERSCORE  &kp PLUS                &kp LEFT_BRACE           &kp RIGHT_BRACE       &kp BACKSLASH          &trans
-                  &trans  &trans           &trans    &trans     &trans    &trans         &trans          &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &trans
+&trans  &kp F1    &kp F2  &kp F3           &kp F4    &kp F5                           &kp F6          &kp F7                  &kp F8                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F11
+&trans  &kp N1    &kp N2  &kp N3           &kp N4    &kp N5                           &kp CARET       &kp AMPERSAND           &kp ASTRK                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&trans  &kp EXCL  &kp AT  &kp HASH         &kp DLLR  &kp PRCNT                        &kp LEFT        &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT             &kp RIGHT_BRACKET      &kp PIPE
+&trans  &p1       &p2     &kp C_AC_SEARCH  &kp LBRC  &kp RBRC   &trans    &kp LG(N0)  &kp UNDERSCORE  &kp PLUS                &kp LEFT_BRACE           &kp RIGHT_BRACE       &kp BACKSLASH          &trans
+                  &trans  &trans           &trans    &trans     &trans    &trans      &trans          &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>,
-                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+                <&inc_dec_kp LG(PLUS) LG(KP_MINUS)>;
         };
 
         raise_layer {
