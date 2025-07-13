@@ -66,14 +66,14 @@
         p1: p1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(D) &kp EXCL &kp D &kp E &kp R &kp O &kp T &kp N1 &kp N6 &kp N8 &kp N8>;
+            bindings = <&kp LS(D) &kp EXCL &kp D &kp E &kp R &kp O &kp T &kp N1 &kp N6 &kp N8 &kp N8 &kp RET>;
             label = "P1";
         };
 
         p2: p2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp O &kp M &kp LS(P) &kp A &kp EXCL &kp N &kp E &kp N1 &kp N6 &kp N8 &kp N8>;
+            bindings = <&kp LS(T) &kp O &kp M &kp LS(P) &kp A &kp EXCL &kp N &kp E &kp N1 &kp N6 &kp N8 &kp N8 &kp RET>;
             label = "P2";
         };
     };
