@@ -60,17 +60,6 @@
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
-
-        search: search {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SEARCH";
-            bindings = <&kp>, <&searchm>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <52>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-        };
     };
 
     macros {
@@ -86,13 +75,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(T) &kp O &kp M &kp LS(P) &kp A &kp EXCL &kp N &kp E &kp N1 &kp N6 &kp N8 &kp N8>;
             label = "P2";
-        };
-
-        cmdtab: cmdtab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(TAB)>;
-            label = "CMDTAB";
         };
     };
 
